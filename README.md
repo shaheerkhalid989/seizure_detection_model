@@ -75,3 +75,23 @@ Input (Timestamps x Channels)
 ```
 ![methodology2 drawio (3)](https://github.com/user-attachments/assets/9a8d2249-141c-4224-9b51-ffe542f53d9b)
 
+## 📈 Results Summary
+
+The model was evaluated on the BIDS-SEINA EEG dataset, which has a severe class imbalance (1 seizure to 59 background segments). Below is a summary of the model’s performance:
+
+| **Metric**      | **Value** |
+|------------------|-----------|
+| Accuracy         | 88.94%    |
+| Seizure F1 Score | 0.13      |
+| ROC-AUC          | 0.686     |
+| PR-AUC           | 0.279     |
+
+### 🔬 Key Observations
+
+- Removing **LSTM layers** led to a **−38% drop in seizure F1 score**
+- Replacing **cross-entropy** with **focal loss** improved seizure F1 by **+38%**
+- Removing **data augmentation** dropped F1 by **−23%**
+
+> ⚠️ Note: High accuracy may be misleading in imbalanced datasets. PR-AUC and F1-score are more informative for seizure detection performance.
+
+
