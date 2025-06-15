@@ -94,6 +94,48 @@ The model was evaluated on the BIDS-SEINA EEG dataset, which has a severe class 
 
 > ⚠️ Note: High accuracy may be misleading in imbalanced datasets. PR-AUC and F1-score are more informative for seizure detection performance.
 
+## 🗂️ Folder Structure
+
+The project is organized as follows:
+
+```text
+D:/FYP/hyb_Cnn-Lstm/
+
+├── model/ (Contains the hybrid model code folders)
+│
+├── dataset/
+│   ├── train/
+│   │   ├── sub-XX_ses-XX_task-szMonitoring_run-XX_eeg.edf
+│   │   ├── sub-XX_ses-XX_task-szMonitoring_run-XX_events.tsv
+│   │   └── ... (other files)
+│   │
+│   └── test/
+│       ├── sub-XX_ses-XX_task-szMonitoring_run-XX_eeg.edf
+│       ├── sub-XX_ses-XX_task-szMonitoring_run-XX_events.tsv
+│       └── ... (other files)
+│
+├── processed_train/
+│   └── tfrecords/
+│       ├── data_0000.tfrecord
+│       └── ... (other TFRecord files)
+│
+├── processed_test/
+│   └── tfrecords/
+│       ├── data_0000.tfrecord
+│       └── ... (other TFRecord files)
+│
+├── results/ (output_dir)
+│   ├── classification_report.txt
+│   ├── confusion_matrix.png
+│   ├── metrics.json
+│   ├── seizure_events_report.json
+│   └── logs/ (for TensorBoard)
+│       ├── train/
+│       └── validation/
+│
+└──seizure_model.keras (saved model)
+```
+
 ## 🔁 Reproducibility
 
 To ensure reliable and repeatable experiments, we followed best practices in data handling, training, and environment setup.
