@@ -125,7 +125,7 @@ cd seizure_detection_model
 # Step 2: Install dependencies
 (All the depndencies are mentioned above)
 
-# Step 3: Preprocess data (after placing BIDS-SEINA in ./raw_data)
+# Step 3: Preprocess data 
 
 # Step 4: Train model
 
