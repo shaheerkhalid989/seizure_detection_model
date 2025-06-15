@@ -41,7 +41,7 @@ The BIDS-SEINA dataset includes:
 - Severe class imbalance (1 seizure to 59 background ratio)
 
 > ⚠️ Dataset must be downloaded separately from its official repository.
-> [Click here to download thw BIDS-SEINA dataset.]([https://example.com](https://paperswithcode.com/dataset/bids-siena-scalp-eeg-database))
+[Click here to download thw BIDS-SEINA dataset.]([https://example.com](https://paperswithcode.com/dataset/bids-siena-scalp-eeg-database))
 
 ---
 
