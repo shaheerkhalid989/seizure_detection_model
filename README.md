@@ -29,6 +29,10 @@ NeuroCare is a hybrid **1D CNN–BiLSTM** model designed to detect epileptic sei
 - Pandas
 - SciPy
 - Matplotlib
+- Seaborn
+- Pyedflib
+- Tqdm
+- Scikit Learn
 - Weights & Biases (optional)
 
 ---
@@ -36,7 +40,7 @@ NeuroCare is a hybrid **1D CNN–BiLSTM** model designed to detect epileptic sei
 ## 🧬 Dataset
 
 The BIDS-SEINA dataset includes:
-- EEG recordings from 14 adult epilepsy patients
+- EEG recordings from 14 adult epilepsy patients (in .edf format with corresponding labels in .tsv files)
 - 512 Hz sampling rate, 10–20 electrode placement
 - Severe class imbalance (1 seizure to 59 background ratio)
 
