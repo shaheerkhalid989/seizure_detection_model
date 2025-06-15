@@ -1,4 +1,4 @@
-# 🧠 NeuroCare: CNN–LSTM for EEG Seizure Detection
+# 🧠 NeuroCare: (Light) CNN–LSTM for EEG Seizure Detection & Classification 
 
 > Hybrid deep learning architecture for real-time seizure detection from EEG signals using the BIDS-SEINA dataset.
 
