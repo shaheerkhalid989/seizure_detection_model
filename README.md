@@ -119,7 +119,7 @@ To ensure reliable and repeatable experiments, we followed best practices in dat
 
 ```bash
 # Step 1: Clone repo
-git clone [https://github.com/yourusername/neurocare-seizure-detection.git](https://github.com/shaheerkhalid989/seizure_detection_model.git)
+git clone https://github.com/shaheerkhalid989/seizure_detection_model.git
 cd seizure_detection_model
 
 # Step 2: Install dependencies
@@ -130,6 +130,7 @@ cd seizure_detection_model
 # Step 4: Train model
 
 # Step 5: Evaluate performance
+(Steps 3-5 will be performed simulatenously when u execute the model over the Bids-Seina Dataset)
 
 
 
