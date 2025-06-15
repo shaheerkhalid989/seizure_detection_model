@@ -35,13 +35,12 @@ NeuroCare is a hybrid **1D CNN–BiLSTM** model designed to detect epileptic sei
 
 ## 🧬 Dataset
 
-The BIDS-SEINA dataset includes:
+We use the [BIDS-SEINA]([https://physionet.org/content/bids-eeg-seizure/1.0.0/](https://paperswithcode.com/dataset/bids-siena-scalp-eeg-database)) dataset:
 - EEG recordings from 14 adult epilepsy patients
 - 512 Hz sampling rate, 10–20 electrode placement
 - Severe class imbalance (1 seizure to 59 background ratio)
 
 > ⚠️ Dataset must be downloaded separately from its official repository.
-[Click here to download thw BIDS-SEINA dataset.]([https://example.com](https://paperswithcode.com/dataset/bids-siena-scalp-eeg-database))
 
 ---
 
