@@ -60,6 +60,7 @@ The BIDS-SEINA dataset includes:
 
 ## 🧠 Model Architecture
 
+![architecture_cnnLstm (2)1](https://github.com/user-attachments/assets/1bf9a644-ff76-4578-8810-33872243a927)
 ```text
 Input (Timestamps x Channels)
 │
@@ -71,3 +72,6 @@ Input (Timestamps x Channels)
 ├── Fully Connected Layers
 │
 └── Output (Softmax: Seizure / Non-Seizure)
+```
+![methodology2 drawio (3)](https://github.com/user-attachments/assets/9a8d2249-141c-4224-9b51-ffe542f53d9b)
+
