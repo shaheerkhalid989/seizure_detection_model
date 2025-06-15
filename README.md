@@ -94,4 +94,42 @@ The model was evaluated on the BIDS-SEINA EEG dataset, which has a severe class 
 
 > ⚠️ Note: High accuracy may be misleading in imbalanced datasets. PR-AUC and F1-score are more informative for seizure detection performance.
 
+## 🔁 Reproducibility
+
+To ensure reliable and repeatable experiments, we followed best practices in data handling, training, and environment setup.
+
+### ✅ Key Steps
+
+- **10-fold subject-wise cross-validation**  
+  Ensures generalization and prevents data leakage across patients.
+
+- **TFRecord-based data pipeline**  
+  Efficient data loading using `tf.data` API with on-the-fly augmentation and prefetching.
+
+- **Deterministic training**  
+  Fixed random seeds for TensorFlow, NumPy, and Python ensure consistent runs.
+
+- **Docker environment**  
+  Provided Dockerfile for consistent dependencies and GPU/CPU behavior.
+
+- **Experiment tracking**  
+  Integrated with [Weights & Biases](https://wandb.ai/) for experiment logging and hyperparameter tracking.
+
+### ▶️ Reproduce Our Results
+
+```bash
+# Step 1: Clone repo
+git clone [https://github.com/yourusername/neurocare-seizure-detection.git](https://github.com/shaheerkhalid989/seizure_detection_model.git)
+cd seizure_detection_model
+
+# Step 2: Install dependencies
+(All the depndencies are mentioned above)
+
+# Step 3: Preprocess data (after placing BIDS-SEINA in ./raw_data)
+
+# Step 4: Train model
+
+# Step 5: Evaluate performance
+
+
 
